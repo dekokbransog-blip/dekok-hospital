@@ -27,6 +27,7 @@
             line-height: 1.6;
         }
 
+        /* Expansive Banner Hero Header */
         .hero {
             background: linear-gradient(135deg, #0f172a 0%, #0369a1 100%);
             color: white;
@@ -64,6 +65,63 @@
             white-space: nowrap;
         }
 
+        /* INTERACTIVE CONTROL DASHBOARD */
+        .interactive-bar {
+            background-color: #e2e8f0;
+            padding: 20px 60px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .dashboard-box {
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+        }
+
+        .dashboard-box h4 {
+            margin: 0 0 10px 0;
+            color: var(--secondary);
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .interactive-bar input, .interactive-bar select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            outline: none;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        /* Calculator Styles */
+        .calc-option {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 5px;
+            font-size: 13px;
+        }
+        .calc-option input[type="checkbox"] {
+            width: auto;
+        }
+        .total-display {
+            font-weight: bold;
+            color: var(--primary);
+            margin-top: 8px;
+            font-size: 15px;
+            border-top: 1px dashed var(--border);
+            padding-top: 5px;
+        }
+
+        /* Wide Layout Workspace Grid */
         .app-workspace {
             display: flex;
             max-width: 100%;
@@ -73,6 +131,7 @@
             box-sizing: border-box;
         }
 
+        /* Left Side Navigation Panel */
         .side-navigation {
             width: 340px;
             min-width: 340px;
@@ -141,6 +200,7 @@
             background-color: rgba(255, 255, 255, 0.2);
         }
 
+        /* Right Side Main Display View */
         .main-showcase {
             flex-grow: 1;
         }
@@ -151,6 +211,7 @@
             gap: 35px;
         }
 
+        /* Premium Clinical Advertisement Cards */
         .service-card {
             background-color: var(--card-bg);
             border-radius: 24px;
@@ -221,6 +282,7 @@
             line-height: 1.7;
         }
 
+        /* Clinical Pathogen Data Panels */
         .medicine-info-box {
             background-color: #f8fafc;
             border-left: 4px solid var(--primary);
@@ -249,6 +311,7 @@
             margin-bottom: 8px;
         }
 
+        /* Lead Call to Action Triggers */
         .card-actions {
             display: flex;
             justify-content: space-between;
@@ -291,77 +354,4 @@
             background-color: var(--primary-hover);
         }
 
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(15, 23, 42, 0.6);
-            backdrop-filter: blur(4px);
-            justify-content: center;
-            align-items: center;
-            z-index: 100;
-        }
-
-        .modal-content {
-            background-color: white;
-            padding: 40px;
-            border-radius: 24px;
-            width: 100%;
-            max-width: 480px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            position: relative;
-        }
-
-        .close-modal {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: none;
-            border: none;
-            font-size: 26px;
-            cursor: pointer;
-            color: var(--text-muted);
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-size: 14px;
-            font-weight: 700;
-        }
-
-        .form-group input {
-            width: 100%;
-            padding: 14px;
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            box-sizing: border-box;
-            outline: none;
-            font-size: 15px;
-        }
-
-        .submit-btn {
-            width: 100%;
-            background-color: var(--success);
-            color: white;
-            border: none;
-            padding: 16px;
-            border-radius: 10px;
-            font-weight: 700;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-
-    <header class="hero">
-        <div class="hero-left">
-            <h1>DEKOK Hospital</h1>
+        /* Form Overlay Modals */
